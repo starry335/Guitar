@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="26dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bottom_nav"
+        android:elevation="10dp"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/navLibrary"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="练习"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/muted" />
+
+        <TextView
+            android:id="@+id/navToday"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/pill_subtle"
+            android:text="专注"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark" />
+
+        <TextView
+            android:id="@+id/navAnalysis"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分析"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/muted" />
+
+        <TextView
+            android:id="@+id/navMaterials"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="资料"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/muted" />
+    </LinearLayout>
+</FrameLayout>
